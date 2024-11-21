@@ -1,0 +1,81 @@
+/* Colores de las columnas */
+.color1 {
+   background-color: #111111; /* Negro */
+   color: white;
+   padding: 20px;
+}
+
+.color2 {
+   background-color: #28a745; /* Verde Claro */
+   color: white;
+   padding: 20px;
+}
+
+.color3 {
+   background-color: #fd7e14; /* Naranja */
+   color: white;
+   padding: 20px;
+}
+
+.color1, .color2, .color3 {
+   padding: 10px; /* Espaciado alrededor de cada columna */
+   box-sizing: border-box; /* Incluye el padding en el ancho total del elemento */
+}
+
+/* Contenedor principal para las imágenes */
+.imagenes-container {
+   display: flex; /* Alinea las imágenes en una fila */
+   gap: 0; /* Sin separación entre las imágenes */
+   width: 33%;
+   height: 52%;
+   overflow: hidden; /* Evita desbordamiento */
+}
+
+/* Ajustes para las imágenes */
+.imagenes-container img {
+   flex: 1; /* Cada imagen toma el mismo espacio dentro del contenedor */
+   width: 16%; /* Asegura que cada imagen ocupe la mitad del contenedor */
+   height: auto; /* Mantiene la proporción original de la imagen */
+   object-fit: cover; /* Llena el espacio del contenedor sin distorsión */
+}
+
+/* Alineación y espaciado adicional */
+h1, h2 {
+   margin-top: 0;
+}
+
+p {
+   margin: 0;
+   padding-top: 10px;
+}
+
+/* Estilos adicionales para el contenedor */
+.row {
+   flex-wrap: wrap;
+   display: flex; /* Flexbox para igualar las alturas de las columnas */
+   margin-bottom: 10px; /* Separación entre filas */
+}
+
+
+/* Espaciado uniforme en cada div de las columnas */
+.color1, .color2, .video-div {
+   padding: 20px; /* Aplica padding uniforme a cada columna */
+   box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del div */
+}
+
+/* Ajustar el iframe en la segunda fila */
+.video-div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%; /* Hace que el div del video ocupe toda la altura de la fila */
+   padding: 0; /* Asegura que el iframe ocupe todo el espacio */
+   box-sizing: border-box;
+}
+
+.video-div iframe {
+   width: 100%;
+   height: 100%;
+   border: none;
+   box-sizing: border-box;
+}

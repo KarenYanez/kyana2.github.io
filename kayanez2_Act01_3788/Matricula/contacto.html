@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Matricula</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Style the header */
+header {
+  background-color: rgba(0, 255, 255);
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  border-width:5px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:10px;
+}
+
+
+article {
+  float: left;
+  padding: 30px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+
+/* Style the footer */
+footer {
+  background-color: rgba(255,121,0);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-container {
+  max-width: 350px;
+  margin: 50px auto;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-container h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.btn-custom {
+  background: linear-gradient(to bottom, #f7e380, #f1c40f);
+  color: #b84d4d;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+}
+.btn-custom:hover {
+  background: #e0b200;
+}     
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  article {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div class="login-container">
+    <div class="login-container">
+      <h2>Contacto</h2>
+      <form>
+          <div class="form-group">
+              <div class="input-group">
+                  <input type="text" class="form-control" placeholder="&#9000: usuario@mail.com" required>
+              </div>
+          </div>
+
+          <div class="form-group">
+              <div class="input-group">
+                  <input type="password" class="form-control" placeholder="&#128272: dd/mm/aa" required>
+              </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+                <input type="password" class="form-control" placeholder="&#128272: Telefono" required>
+            </div>
+        </div>
+          <button type="submit" class="btn btn-custom">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- <input type="password" name="password" placeholder="&#128272; Enter Password..." required> -->
+<!--<footer>
+  <p></p>
+</footer>-->
+
+</body>
+</html>
